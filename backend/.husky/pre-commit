@@ -1,0 +1,6 @@
+pnpm lint-staged
+
+pnpm sonar || {
+  echo "SonarQube analysis failed. Aborting push."
+  exit 1
+}
